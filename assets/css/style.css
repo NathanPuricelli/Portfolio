@@ -11,7 +11,7 @@
 }
 
 :root {
-    --color-white: #fff;
+    --color-white: rgba(236,234,235,221);
     --color-primary: #E9C46A;
     --color-secondary: #F4A261;
     --color-dark: #264653;
@@ -36,6 +36,10 @@ h1,
 h2,
 h3 {
     color: var(--color-dark-txt);
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 p {
@@ -159,9 +163,24 @@ img {
 /* Name and profile picture */
 
 .home {
-    display: grid;
-    place-items: center;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
     top: 4rem;
     padding-bottom: 10rem;
+}
+
+section.home .profilePicture {
+    width: 20vw;
+    min-width: 300px;
+    margin : 0 30px
+}
+
+section.home .name {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 200px;
 }
