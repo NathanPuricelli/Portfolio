@@ -18,7 +18,7 @@
     --color-less-dark: #2A9D8F;
     --color-dark-txt: #101010;
 
-    --transition: all 200ms ease;
+    --transition: all 300ms ease;
 }
 
 html {
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background-color: var(--color-white);
+     background-color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
     max-width: 100vw;
 }
@@ -67,7 +67,7 @@ img {
 }
 
 .btn:hover {
-    box-shadow: 0 2rem 2rem var(--color-secondary);
+    box-shadow: 0 .5rem .5rem var(--color-secondary);
 }
 
 /* Navigation bar for browser */
@@ -94,6 +94,7 @@ img {
 
 .navbar-links li:hover {
     background-color: var(--color-less-dark);
+    transition: var(--transition);
 }
 
 .navbar-links li a {
@@ -182,11 +183,21 @@ section.home .name {
     display: flex;
     flex-direction: column;
     width: 30vw;
-    min-width: 200px;
+    min-width: 300px;
 }
 
-section.disclamer {
+section.home .name a {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+section.disclaimer {
     padding-top: 0;
+    margin: 0 2rem 0 2rem;
+}
+
+section.disclaimer h3 {
+    padding: 0 1rem 0 1rem;
 }
 
 .flexbox-icons {
@@ -200,6 +211,9 @@ section.disclamer {
 .flexbox-icons a {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexbox-icons a i {
